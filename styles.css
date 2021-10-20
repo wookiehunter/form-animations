@@ -1,0 +1,354 @@
+body {
+	background-color: #00796b;
+}
+
+h1 {
+	color: white;
+	text-align: center;
+	letter-spacing: 2px;
+}
+
+section {
+	height: 12.5vh;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+}
+
+label {
+	color: white;
+	letter-spacing: 2px;
+	margin-bottom: 15px;
+}
+
+.input {
+	width: 200px;
+}
+
+.input::placeholder {
+	font-family: sans-serif;
+	letter-spacing: 2px;
+}
+
+/* Sliding Placeholder */
+#placeholder .input:focus::placeholder {
+	color: orangered;
+	transition: transform 1.5s ease-in;
+	transform: translateX(400px);
+}
+
+/* Rainbow Label */
+#label .rainbow1 {
+	animation: jump1 7s infinite;
+}
+
+@keyframes jump1 {
+	0% {
+		color: red;
+	}
+	15% {
+		color: orange;
+	}
+	30% {
+		color: yellow;
+	}
+	45% {
+		color: green;
+	}
+	60% {
+		color: blue;
+	}
+	75% {
+		color: indigo;
+	}
+	90% {
+		color: violet;
+	}
+	100% {
+		color: red;
+	}
+}
+
+#label .rainbow2 {
+	animation: jump2 7s infinite;
+}
+
+@keyframes jump2 {
+	0% {
+		color: orange;
+	}
+	15% {
+		color: yellow;
+	}
+	30% {
+		color: green;
+	}
+	45% {
+		color: blue;
+	}
+	60% {
+		color: indigo;
+	}
+	75% {
+		color: violet;
+	}
+	90% {
+		color: red;
+	}
+	100% {
+		color: orange;
+	}
+}
+
+#label .rainbow3 {
+	animation: jump3 7s infinite;
+}
+
+@keyframes jump3 {
+	0% {
+		color: yellow;
+	}
+	15% {
+		color: green;
+	}
+	30% {
+		color: blue;
+	}
+	45% {
+		color: indigo;
+	}
+	60% {
+		color: violet;
+	}
+	75% {
+		color: red;
+	}
+	90% {
+		color: orange;
+	}
+	100% {
+		color: yellow;
+	}
+}
+
+#label .rainbow4 {
+	animation: jump4 7s infinite;
+}
+
+@keyframes jump4 {
+	0% {
+		color: green;
+	}
+	15% {
+		color: blue;
+	}
+	30% {
+		color: indigo;
+	}
+	45% {
+		color: violet;
+	}
+	60% {
+		color: red;
+	}
+	75% {
+		color: orange;
+	}
+	90% {
+		color: yellow;
+	}
+	100% {
+		color: green;
+	}
+}
+
+#label .rainbow5 {
+	animation: jump5 7s infinite;
+}
+
+@keyframes jump5 {
+	0% {
+		color: blue;
+	}
+	15% {
+		color: indigo;
+	}
+	30% {
+		color: violet;
+	}
+	45% {
+		color: red;
+	}
+	60% {
+		color: orange;
+	}
+	75% {
+		color: yellow;
+	}
+	90% {
+		color: green;
+	}
+	100% {
+		color: blue;
+	}
+}
+
+#label .rainbow6 {
+	animation: jump6 7s infinite;
+}
+
+@keyframes jump6 {
+	0% {
+		color: indigo;
+	}
+	15% {
+		color: violet;
+	}
+	30% {
+		color: red;
+	}
+	45% {
+		color: orange;
+	}
+	60% {
+		color: yellow;
+	}
+	75% {
+		color: green;
+	}
+	90% {
+		color: blue;
+	}
+	100% {
+		color: indigo;
+	}
+}
+
+#label .rainbow7 {
+	animation: jump7 7s infinite;
+}
+
+@keyframes jump7 {
+	0% {
+		color: violet;
+	}
+	15% {
+		color: red;
+	}
+	30% {
+		color: orange;
+	}
+	45% {
+		color: yellow;
+	}
+	60% {
+		color: green;
+	}
+	75% {
+		color: blue;
+	}
+	90% {
+		color: indigo;
+	}
+	100% {
+		color: violet;
+	}
+}
+
+/* DancingButton */
+#dance .dance {
+	color: darkblue;
+	padding: 30px 30px;
+	border-radius: 10px;
+	box-shadow: 2px 3px 0px white;
+	cursor: pointer;
+	background: #74ebd5; /* fallback for old browsers */
+	background: -webkit-linear-gradient(
+		to right,
+		#acb6e5,
+		#74ebd5
+	); /* Chrome 10-25, Safari 5.1-6 */
+	background: linear-gradient(
+		to right,
+		#acb6e5,
+		#74ebd5
+	); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+	overflow: hidden;
+}
+
+#dance .dance:active {
+	transform: translateY(5px);
+	box-shadow: 0px 0px 0px;
+}
+
+#dance .dance.dancing {
+	animation: dance 0.5s ease-in-out;
+}
+
+@keyframes dance {
+	0% {
+		transform: translateX(-5px);
+	}
+	25% {
+		transform: translateX(5px);
+	}
+	50% {
+		transform: translateX(-5px);
+	}
+	75% {
+		transform: translateX(5px);
+	}
+	100% {
+		transform: translateX(0px);
+	}
+}
+
+/* Expand */
+
+#expand button {
+	padding: 10px 30px;
+	background: grey;
+	color: white;
+	border-radius: 10px;
+	box-shadow: 3px 3px 0px white;
+	font-size: 1.25rem;
+	border: 2px solid black;
+}
+
+#expand button:active {
+	transform: translateY(5px);
+	box-shadow: 0px 0px 0px;
+}
+
+#expand button.active {
+	background-color: green;
+}
+
+@keyframes bgChange {
+	0% {
+		background-color: red;
+		color: white;
+	}
+	20% {
+		background-color: white;
+		color: black;
+
+	}
+	40% {
+		background-color: blue;
+		color: white;
+	}
+	60% {
+		background-color: red;
+		color: white;
+	}
+	80% {
+		background-color: white;
+		color: black;
+	}
+	100% {
+		background-color: blue;
+		color: white;
+	}
+}
