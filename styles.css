@@ -308,7 +308,7 @@ label {
 
 #expand button {
 	padding: 10px 30px;
-	background: grey;
+	background: red;
 	color: white;
 	border-radius: 10px;
 	box-shadow: 3px 3px 0px white;
@@ -325,30 +325,20 @@ label {
 	background-color: green;
 }
 
-@keyframes bgChange {
-	0% {
-		background-color: red;
-		color: white;
-	}
-	20% {
-		background-color: white;
-		color: black;
+/* Explode button */
+#explode .explodeBtn {
+	border-radius: 50%;
+	width: 100px;
+	height: 100px;
+	border: none;
+	font-size: 1.5rem;
+}
 
-	}
-	40% {
-		background-color: blue;
-		color: white;
-	}
-	60% {
-		background-color: red;
-		color: white;
-	}
-	80% {
-		background-color: white;
-		color: black;
-	}
-	100% {
-		background-color: blue;
-		color: white;
-	}
+#explode .explodeBtn.active {
+	display: none;
+	
+}
+
+#explode .boom {
+	display: none;
 }
