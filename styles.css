@@ -40,7 +40,7 @@ label {
 
 /* Rainbow Label */
 #label .rainbow1 {
-	animation: jump1 7s infinite;
+	animation: jump1 1s infinite;
 }
 
 @keyframes jump1 {
@@ -71,7 +71,7 @@ label {
 }
 
 #label .rainbow2 {
-	animation: jump2 7s infinite;
+	animation: jump2 1s infinite;
 }
 
 @keyframes jump2 {
@@ -102,7 +102,7 @@ label {
 }
 
 #label .rainbow3 {
-	animation: jump3 7s infinite;
+	animation: jump3 1s infinite;
 }
 
 @keyframes jump3 {
@@ -133,7 +133,7 @@ label {
 }
 
 #label .rainbow4 {
-	animation: jump4 7s infinite;
+	animation: jump4 1s infinite;
 }
 
 @keyframes jump4 {
@@ -164,7 +164,7 @@ label {
 }
 
 #label .rainbow5 {
-	animation: jump5 7s infinite;
+	animation: jump5 1s infinite;
 }
 
 @keyframes jump5 {
@@ -195,7 +195,7 @@ label {
 }
 
 #label .rainbow6 {
-	animation: jump6 7s infinite;
+	animation: jump6 1s infinite;
 }
 
 @keyframes jump6 {
@@ -226,7 +226,7 @@ label {
 }
 
 #label .rainbow7 {
-	animation: jump7 7s infinite;
+	animation: jump7 1s infinite;
 }
 
 @keyframes jump7 {
@@ -280,10 +280,11 @@ label {
 #dance .dance:active {
 	transform: translateY(5px);
 	box-shadow: 0px 0px 0px;
+	padding: 30px 30px;
 }
 
 #dance .dance.dancing {
-	animation: dance 0.5s ease-in-out;
+	animation: dance 0.5s infinite;
 }
 
 @keyframes dance {
@@ -301,6 +302,7 @@ label {
 	}
 	100% {
 		transform: translateX(0px);
+		padding: 30px 30px;
 	}
 }
 
@@ -336,7 +338,6 @@ label {
 
 #explode .explodeBtn.active {
 	display: none;
-	
 }
 
 #explode .boom {
